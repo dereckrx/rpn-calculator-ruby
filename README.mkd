@@ -9,7 +9,7 @@ Extensible means it's easy to add new operators. To add a new operation, simply 
 The code is command-line only, but GUI code can be substituted for the command-line interface. 
 
 An example (using > as a prompt):
- 
+
 	$ calc
 	> 4 3 +
 	7
