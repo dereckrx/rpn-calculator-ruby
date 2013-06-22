@@ -4,20 +4,21 @@ Implementation of an *extensible* four-function RPN calculator. The four functio
 * times
 * divide
 
-Extensible means it's easy to add new operators. To add a new operation, simply add a new operation class into 'lib/operations' with the 'call' method and the 'key' constant defined. The operation class will be auto loaded and available for useable. 
+Extensible means it's easy to add new operators. To add a new operation, simply add a new operation class into 'lib/operations' with the 'call' method and the 'key' constant defined. The operation class will be auto loaded and available for use. 
 
 The code is command-line only, but GUI code can be substituted for the command-line interface. 
- 
+
 An example (using > as a prompt):
  
-$ calc
-> 4 3 +
-7
-> 100 100 + 2 *
-400
-> 
+	$ calc
+	> 4 3 +
+	7
+	> 100 100 + 2 *
+	400
+	> 
 
 RPN is short for reverse-polish-notation (the same scheme used by HP calculators and by the Forth programming language). The idea is that numbers are placed on a stack and operators operate on the stack. So:
+
 * 4 would push 4 onto the stack.
 * 3 would then push 3 onto the stack (so the stack has 4 and 3 on it, with 3 on top
 * + would remove the top two stack entries from the stack, add them together and put the result on the stack (so the stack would now have 7 on it).
