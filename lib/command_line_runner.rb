@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 =begin
 
 This is the command line interface for the RPN calculator.
@@ -46,5 +44,3 @@ class CommandLineRunner
   end
   
 end
-
-CommandLineRunner.new.run
