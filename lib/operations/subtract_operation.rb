@@ -5,7 +5,7 @@ class SubtractOperation < Operation
   KEY = '-'
   
   def call(x, y)
-    y - x
+    x - y
   end
   
 end
