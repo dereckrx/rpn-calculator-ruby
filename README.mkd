@@ -4,7 +4,7 @@ Implementation of an *extensible* Reverse Polish Notation (RPN) calculator. From
 
 This calculator is extensible, which means it's easy to add new operations. To add a new operation, simply add a new operation class into 'lib/operations' with the 'call' method and the 'key' constant defined. The operation class will be auto loaded and available for use. 
 
-The code is command-line only, but GUI code can be substituted for the command-line interface. 
+This project is somewhat overly engineered on purpose to demonstrate good coding practices, SOLID design principles and object oriented programming. 
 
 An example (using > as a prompt):
 
