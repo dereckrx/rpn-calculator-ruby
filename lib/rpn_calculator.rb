@@ -3,7 +3,7 @@
 This class iterates through a tokenized calculator expression and:
 
  * if it's a value, pushes it on the stack
- * if it's an operator, evalutates it and pushes it's result on the stack
+ * if it's an operator, evalutates it and pushes its result on the stack
  * else raises an invalid token error
 
 So if the input tokens are ['1', '2', '+', '4', '*']:
@@ -33,13 +33,13 @@ class RpnCalculator
   def evaluate(tokens)
     stack.reset
     
-    tokens.each do |t|
-      if is_operator?(t)
-        stack.push(evaluate_operator(t))
-      elsif is_value?(t)
-        stack.push(t.to_f)
+    tokens.each do |token|
+      if is_operator?(token)
+        stack.push(evaluate_operator(token))
+      elsif is_value?(token)
+        stack.push(token.to_f)
       else
-        raise RpnError, "Invalid token '#{t}'." 
+        raise RpnError, "Invalid token '#{token}'." 
       end
     end
     

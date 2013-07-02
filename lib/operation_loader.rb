@@ -16,7 +16,7 @@ require_relative 'class_loader'
 
 class OperationLoader
   
-  OPERATIONS_PATH  = './lib/operations/*_operation.rb'
+  OPERATIONS_PATH  = 'lib/operations/*_operation.rb'
   
   # Returns hash of operator keys and their operations.
   def operations

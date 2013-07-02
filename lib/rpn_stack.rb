@@ -39,7 +39,7 @@ class RpnStack
     @values.push(value)
   end
   
-  # Retuns top two values on stack. 
+  # Returns the top two values on stack. 
   # Raises an error if there's not enough values on the stack.
   def pop_pair
     raise RpnError, "Not enough values." if @values.length < 2

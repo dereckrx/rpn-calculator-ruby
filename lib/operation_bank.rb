@@ -1,4 +1,5 @@
 =begin
+
 This class holds the operations available to the calculator
 and manages calling the operations. Operations are called 
 using their 'operator' key. 

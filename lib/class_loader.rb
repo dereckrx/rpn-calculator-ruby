@@ -16,7 +16,7 @@ class ClassLoader
     classify(File.basename(path, ".rb"))
   end
   
-  # Returns an array of class constants who's file path matches _path_pattern_.
+  # Returns an array of class constants whose file path matches _path_pattern_.
   def classify_files(path_pattern)
     paths_for(path_pattern).each_with_object([]) do |path, classes|
       classes << classify_file(path)
